@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 @RestController
 public class UserController {
 
-    @Autowired
+    @Resource
     UserService service;
 
 
