@@ -1,0 +1,14 @@
+server:
+  port: 8101
+spring:
+  application:
+    name: userservice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sh-cynosdbmysql-grp-cqujkg38.sql.tencentcdb.com:22420/book
+    username: root
+    password: Hyk0902.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
