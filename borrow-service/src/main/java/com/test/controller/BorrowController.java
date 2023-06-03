@@ -18,7 +18,7 @@ public class BorrowController {
     BorrowService service;
 
 
-    @HystrixCommand(fallbackMethod = "onError")
+    //@HystrixCommand(fallbackMethod = "onError")
     @RequestMapping("/borrow/{uid}")
     UserBorrowDetail findUserBorrows(@PathVariable("uid") int uid){
         return service.getUserBorrowDetailByUid(uid);
